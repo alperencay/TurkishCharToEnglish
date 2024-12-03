@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurkishCharToEnglish</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="d-flex align-items-center justify-content-center h-100 w-100">
+
+    <div class="main-content d-flex flex-row m-auto align-items-center justify-content-center">
+        <div class="language-content d-flex flex-column mx-4 flex-grow-1" id="turkishContent">
+            <label>Türkçe metin giriniz</label>
+            <textarea id="turkish-text"></textarea>
+        </div>
+        <div class="button-content d-flex flex-column">
+            <div class="form-check form-switch d-flex justify-content-center">
+                <input class="form-check-input" type="checkbox" id="upperCheckBox" checked>
+                <label class="form-check-label" for="upperCheckBox">A^</label>
+            </div>
+            <button class="btn btn-primary mx-4 flex-grow-2" id="btnTranslate">Dönüştür</button>
+        </div>
+
+
+        <div class="language-content d-flex flex-column mx-4 flex-grow-1" id="englishContent">
+            <label>Çıktı</label>
+            <textarea readonly id="english-text"></textarea>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
